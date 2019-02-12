@@ -1,0 +1,93 @@
+
+.position-fixed{
+	position: fixed;
+	top: 30px;
+	left: 5px;
+}
+
+
+#container-1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+}
+
+.hexagon {
+      width: 120px;
+      height: 65px;
+      background: blue;
+      position: relative;
+      transform: rotate(90deg);
+      margin-left: -5px;
+      margin-bottom: 55px;
+    }
+
+.hexagon:before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-bottom: 25px solid blue;
+  }
+
+.hexagon:after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-left: 60px solid transparent;
+      border-right: 60px solid transparent;
+      border-top: 25px solid blue;
+    }
+
+#container-2{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+}
+
+.position2-fixed{
+	position: fixed;
+	top: 0px;
+	left: 28px;
+}
+
+.hackhome{
+	border-top:4px dashed #EAE13B; 
+	height:50px;
+	width:1300px;
+	margin-bottom: 65px;
+}
+
+.triangle{
+	  width: 0;
+      height: 0;
+      border-left: 32px solid transparent;
+      border-right: 32px solid transparent;
+      border-bottom: 120.5px solid yellow;
+      margin-right:51px;
+      opacity:0.9;
+}
+
+#container-3{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.position3-fixed{
+	position: fixed;
+	top: 60px;
+	left: 0px;
+}
