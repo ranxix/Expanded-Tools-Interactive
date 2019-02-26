@@ -1,0 +1,223 @@
+body{
+	font-size: 20px;
+	 background-color: #95CDD9;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+  transform: translateY(-300px);
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+  25% {transform: rotate(120deg);}
+  50% {transform: rotate(240deg);}
+  75% {transform: rotate(360deg);}
+} 
+
+
+.LeftTriangle {  
+  width: 0;  
+  height: 0;  
+  float: left;  
+  border-top: 260px solid transparent;  
+  border-right: 520px solid #55fdbf;  
+  border-bottom: 260px solid transparent; 
+  	transform:translateX(30px) translateY(210px) rotate(60deg); 
+}  
+
+
+div.LeftTriangle-1:hover {    
+
+}  
+
+
+
+.square{
+	
+	width: 500px;
+	height: 600px;
+	background-color: #FFFFFF;
+		padding: 50px;
+	margin: 50px;
+	transform:translateX(700px) translateY(10px);
+}
+
+
+.square-r{
+	
+	width: 500px;
+	height: 600px;
+	background-color: #FFFFFF;
+		padding: 50px;
+	margin: 50px;
+	transform:translateX(700px) translateY(310px) rotate(180deg);
+}
+
+
+.grid {
+    
+    background-image:
+        linear-gradient(rgba(255,255,255,.3) 3px, transparent 0),
+        linear-gradient(90deg, rgba(255,255,255,.3) 3px, transparent 0),
+        linear-gradient(black 3px, transparent 0),
+        linear-gradient(90deg, black 3px, transparent 0);
+    background-size: 55px 55px, 15px 15px, 75px 75px, 75px 75px;
+    width: 600px;
+    height: 650px;
+    transform:translateX(720px) translateY(-640px) scale(1.7);
+}
+
+.grid-r {
+    
+    background-image:
+        linear-gradient(rgba(255,255,255,.3) 3px, transparent 0),
+        linear-gradient(90deg, rgba(255,255,255,.3) 3px, transparent 0),
+        linear-gradient(black 3px, transparent 0),
+        linear-gradient(90deg, black 3px, transparent 0);
+    background-size: 55px 55px, 15px 15px, 75px 75px, 75px 75px;
+    width: 600px;
+    height: 650px;
+    transform:translateX(520px) translateY(-640px) rotate(180deg);
+}
+
+
+ .circle{
+  width: 50px;
+  height: 50px;
+  background-color:#93cdda;
+  border-radius: 50%;
+  transform:translateX(-380px) translateY(450px);
+}
+
+ .circle-2{
+  width: 50px;
+  height: 50px;
+  background-color:#93cdda;
+  border-radius: 50%;
+  transform:translateX(-370px) translateY(400px);
+}
+
+.LeftTriangle-1 {  
+  width: 0;  
+  height: 0;  
+  float: left;  
+  border-top: 50px solid transparent;  
+  border-right: 100px solid #ff1074;  
+  border-bottom: 50px solid transparent; 
+    transform:translateX(-200px) translateY(480px) rotate(130deg); 
+}  
+
+
+.circle-1 {
+      width:500px;
+        height:250px;
+        border-radius:250px 250px 0 0;
+        background-color:#FFE337;
+  transform:translateX(920px) translateY(-1190px) rotate(270deg);
+}
+
+.circle-1-r {
+      width:150px;
+        height:350px;
+        border-radius:250px 250px 0 0;
+        background-color:#FFE337;
+  transform:translateX(920px) translateY(-1190px) rotate(180deg) scale(1.5);
+}
+
+.circle-3 {
+        width:500px;
+        height:250px;
+        border-radius:250px 250px 0 0;
+        background-color:#8d63d2;
+        transform:rotate(200deg) translateX(-470px) translateY(-1000px) scale(0.8,0.8);
+}
+
+.circle-4 {
+        width:500px;
+        height:300px;
+        border-radius:50%;
+        background-color:#8d63d2;
+        transform:translateX(800px) translateY(1400px);
+}
+
+#container-1{
+	position: absolute;
+	top:0;
+	right: 25%;
+  transform: scale(0.5)
+}
+
+
+#container-2{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 1;
+  mix-blend-mode: difference;
+}
+
+#container-3{
+	position: absolute;
+	top:120%;
+	left: -20%;
+}
+
+.circle-transparent{
+	width: 30px;
+	height: 30px;
+	background-color:#FFF92C;
+	border-radius: 50%;
+	margin: 80px;
+  animation-name: flash;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+.position-fixed{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+.container-4{
+	position:absolute;
+	top:280%;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+ .circle-5{
+  width: 50px;
+  height: 50px;
+  background-color:#93cdda;
+  border-radius: 50%;
+  transform:translateX(250px) translateY(400px);
+}
+
+ .circle-6{
+  width: 50px;
+  height: 50px;
+  background-color:#93cdda;
+  border-radius: 50%;
+  transform:translateX(350px) translateY(320px);
+}

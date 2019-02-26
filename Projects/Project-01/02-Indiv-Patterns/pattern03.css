@@ -1,8 +1,5 @@
-
-.position-fixed{
-	position: fixed;
-	top: 30px;
-	left: 5px;
+body{
+      background-color: #98baf9;
 }
 
 
@@ -17,7 +14,7 @@
 .hexagon {
       width: 120px;
       height: 65px;
-      background: blue;
+      background: #9463fb;
       position: relative;
       transform: rotate(90deg);
       margin-left: -5px;
@@ -33,7 +30,7 @@
       height: 0;
       border-left: 60px solid transparent;
       border-right: 60px solid transparent;
-      border-bottom: 25px solid blue;
+      border-bottom: 25px solid #9463fb;
   }
 
 .hexagon:after {
@@ -45,7 +42,7 @@
       height: 0;
       border-left: 60px solid transparent;
       border-right: 60px solid transparent;
-      border-top: 25px solid blue;
+      border-top: 25px solid #9463fb;
     }
 
 #container-2{
@@ -53,30 +50,80 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+      mix-blend-mode: overlay;
+      z-index: 1;
 
 }
 
 .position2-fixed{
 	position: fixed;
 	top: 0px;
-	left: 28px;
+	left: 0px;
 }
 
 .hackhome{
-	border-top:4px dashed #EAE13B; 
+	border-top:5px dashed #4497ff; 
 	height:50px;
-	width:1300px;
-	margin-bottom: 65px;
+	width:1500px;
+	margin-bottom: 45px;
+      animation-name: flash;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      transform-origin: left;
+
+}
+
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
 }
 
 .triangle{
-	  width: 0;
+	width: 0;
       height: 0;
-      border-left: 32px solid transparent;
-      border-right: 32px solid transparent;
-      border-bottom: 120.5px solid yellow;
-      margin-right:51px;
+      border-left: 82px solid transparent;
+      border-right: 82px solid transparent;
+      border-bottom: 220px solid #ffbc00;
+      margin-left: 0px;
+      margin-right:10px;
       opacity:0.9;
+      transition: transform 0.5s;
+
+}
+
+ .triangle:hover{
+      transform: translateX(50px) translateY(-80px) skewX(-15deg);
+      border-bottom: 220px solid green;
 }
 
 #container-3{
@@ -84,6 +131,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+      mix-blend-mode: difference;
 }
 
 .position3-fixed{

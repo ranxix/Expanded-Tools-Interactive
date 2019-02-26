@@ -1,14 +1,13 @@
-.position-fixed{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-}
-
 
 #container-1{
+	position:fixed;
+	top:0;
+	left:0;
+	right: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
 
 }
 
@@ -17,7 +16,12 @@
       height: 100px;
       background: #0355DA;
       margin-right:150px;
-      margin-bottom: 100px
+      margin-bottom: 100px;
+      animation-name: slideOutRight;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;;
 }
 
 .position2-fixed{
@@ -30,6 +34,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
 }
 
 .position3-fixed{
@@ -42,6 +47,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
+	mix-blend-mode: exclusion;
 }
 
 .square-2{
@@ -59,6 +66,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
+	mix-blend-mode: overlay;
 }
 
 .square-3{
@@ -84,12 +93,14 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
 }
 
 #container-6{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
 }
 
 .position5-fixed{
@@ -102,6 +113,7 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
 }
 
 .oval-1{
@@ -111,6 +123,18 @@
       border-radius: 75px/ 12.5px;
       margin-right: 150px;
       margin-bottom: 180px; 
+
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(150%, 50%, 0);
+  }
 }
 
 .position6-fixed{
@@ -123,6 +147,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
+	mix-blend-mode: overlay;
 }
 
 .position7-fixed{
@@ -135,6 +161,8 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
+	mix-blend-mode: color-dodge;
 }
 
 .circle-1{
@@ -147,6 +175,12 @@
       border-color:#0355DA;
       margin-right: 240px;
       margin-bottom: 145px; 
+      transition: transform 1s;
+      mix-blend-mode: difference;
+}
+
+.circle-1:hover{
+      transform: translateY(300px);
 }
 
 .position8-fixed{
@@ -159,4 +193,6 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	transform: scale(1.1);
+    mix-blend-mode: color-dodge;
 }
