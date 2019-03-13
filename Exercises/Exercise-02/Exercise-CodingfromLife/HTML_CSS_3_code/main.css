@@ -1,0 +1,185 @@
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+div{
+	width: 75%;
+	position: relative;
+}
+
+div > h1{
+	font-size: 2em;
+}
+
+div > p{
+	margin: 0em 0em 4em 0.5em;
+	width: 45%;
+	float: left;
+}
+
+p.line-height-1{
+	line-height: 1em;
+}
+
+p.line-height-2{
+	line-height: 2em;
+}
+
+p.font-style-oblique{
+	font-style: oblique;
+}
+
+p.font-style-italic{
+	font-style: italic;
+}
+
+p.font-weight-bold{
+	font-weight: bold;
+}
+
+p.font-weight-100{
+	font-weight: 100;
+}
+
+p.uppercase{
+	text-transform: uppercase;
+}
+
+p.lowercase{
+	text-transform: lowercase;
+}
+
+p.overline{
+	text-decoration: overline;
+}
+
+p.underline{
+	text-decoration: underline;
+}
+
+.circle{
+	transition: background 2s ease;
+	width: 200px;
+	height: 200px;
+	background: #0000ff;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	float: left;
+	margin: 15px;
+}
+
+.circle:hover{
+	background: #ff0000;
+}
+
+.square{
+	background-color: #0000ff;
+	width: 300px;
+	height: 300px;
+	position: relative;
+	display: inline-block;
+}
+
+.bottomslide{
+	width: 300px;
+	height: 0px;
+	overflow:hidden;
+	-webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    margin-top: 300px;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    font-size: 1em;
+    text-align: center;
+    color: #000000;
+}
+
+.square:hover .bottomslide{
+	margin-top: 221px;
+	height: 69px;
+	padding-top: 15px;
+}
+
+.blob{
+	width: 200px;
+	height: 200px;
+	float: left;
+	background-color: coral;
+	-webkit-animation: squareTocircle 6s ease 1s infinite alternate;
+}
+
+@-webkit-keyframes squareTocircle{
+	0%{
+		border-radius: 0 0 0 0;
+      	background: coral;
+      	transform: rotate(0deg);
+	}
+
+	25%{
+		border-radius: 50% 0 0 0;
+      	background: yellow;
+      	transform: rotate(45deg);
+	}
+
+	50%{
+		border-radius: 50% 50% 0 0;
+      	background: pink;
+      	transform: rotate(90deg);
+	}
+
+	75%{
+		border-radius: 50% 50% 50% 0;
+      	background: blue;
+      	transform: rotate(135deg);
+	}
+
+	100%{
+		border-radius: 50% 50% 50% 50%;
+      	background: green;
+      	transform: rotate(180deg);
+	}
+
+}
+
+.flame{
+	position: relative;
+	display: inline-block;
+	margin-left: 4em;
+	width: 50px;
+	height: 50px;
+	border-radius: 0px 25px 25px 25px; 
+	background-color: orange;
+  -webkit-animation-duration: 0.33s;
+  -webkit-animation-name: flicker;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  transform: rotate(90deg);
+}
+
+.base{
+	width: 50px;
+	height: 150px;
+	border: solid black 2px;
+	margin-left: 14em;
+}
+
+
+@-webkit-keyframes flicker {
+
+  from {
+    transform: rotate(50deg);
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate(53deg);
+    opacity: .85;
+  }
+  
+}
+
