@@ -274,3 +274,204 @@ body {
       top: 218px;
       left: 575px;
     }
+
+.tail-mask {
+  height: 30px;
+  width: 75px;
+  background-color: white;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  z-index: 0;
+}
+
+.nose {
+  position: absolute;
+  top: 250px;
+  left: 720px;
+  height: 20px;
+  width: 20px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  background-color: pink;
+}
+
+.body {
+  position: absolute;
+  top: 190px;
+  left: 570px;
+  height: 110px;
+  width: 190px;
+  background-color: #f3eae3;
+  border-radius: 40px;
+  transform: rotate(20deg);
+}
+
+.body-l {
+  position: absolute;
+  top: 193px;
+  left: 576px;
+  height: 70px;
+  width: 190px;
+  background-color: #fffcf7;
+  border-radius: 40px;
+  transform: rotate(17deg);
+}
+
+.body-2 {
+  position: absolute;
+  top: 200px;
+  left: 660px;
+  height: 110px;
+  width: 100px;
+  background-color: #f3eae3;
+  border-radius: 40px;
+  transform: skewY(-5deg);
+}
+
+ .circle-12 {
+      width: 90px;
+      height: 90px;
+      background: #fffcf7;
+      border-radius: 45%;
+      position:absolute;
+      top: 200px;
+      left: 675px;
+    }
+
+ .body-3 {
+  position: absolute;
+  top: 92px;
+  left: 550px;
+  height: 30px;
+  width: 90px;
+  background-color: #fffcf7;
+  border-radius: 20px;
+  transform: rotate(-10deg);
+}
+
+ .body-4 {
+  position: absolute;
+  top: 130px;
+  left: 520px;
+  height: 90px;
+  width: 170px;
+  background-color: #f3eae3;
+  border-radius: 20px;
+  transform: rotate(80deg);
+}
+
+.triangle-1 {
+      position: absolute;
+      top: 155px;
+      left: 627px;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 100px solid #f7e8dd;
+      border-bottom: 50px solid transparent;
+      transform: scale(0.5) rotate(-15deg);
+    }
+  
+.triangle-2 {
+      position: absolute;
+      top: 152px;
+      left: 700px;
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-left: 100px solid #f7e8dd;
+      border-bottom: 50px solid transparent;
+      transform: scale(0.45) rotateY(150deg) rotate(-10deg);
+    }
+
+
+.eye-1 {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #554D44;
+  position: absolute;
+  top: 230px;
+  left: 700px;
+}
+.eye-2 {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #554D44;
+  position: absolute;
+  top: 230px;
+  left: 740px;
+}
+
+.mouth-1{  
+   width:13px;  
+   height:9px;  
+   float: left;  
+   background-color: #fffcf7;  
+   border-radius:50%;  
+   box-shadow: 0px 3px 0 0 #554d44;  
+   position: absolute;
+   top: 268px;
+   left: 716px;
+   transform: rotate(-20deg);
+ }
+
+.mouth-2{  
+   width:13px;  
+   height:9px;  
+   float: left;  
+   background-color: #fffcf7;  
+   border-radius:50%;  
+   box-shadow: 0px 3px 0 0 #554d44;  
+   position: absolute;
+   top: 268px;
+   left: 730px;
+   transform: rotate(20deg);
+ }
+
+.triangle-3 {
+      position: absolute;
+      top: 260px;
+      left: 630px;
+      width: 0;
+      height: 0;
+      border-top: 90px solid transparent;
+      border-left: 70px solid #f7e8dd;
+      border-bottom: 30px solid transparent;
+      border-top-left-radius: 80%;
+      border-top-right-radius: 20%;
+      transform: scale(0.4) rotate(200deg);
+    }
+
+
+.triangle-4 {
+      position: absolute;
+      top: 250px;
+      left: 715px;
+      width: 0;
+      height: 0;
+      border-top: 90px solid transparent;
+      border-left: 70px solid #f7e8dd;
+      border-bottom: 30px solid transparent;
+      border-top-left-radius: 80%;
+      border-top-right-radius: 20%;
+      transform: scale(0.4) rotateX(180deg) rotate(30deg);
+    }
+
+.triangle-5 {
+      position: absolute;
+      top: 218px;
+      left: 540px;
+      width: 0;
+      height: 0;
+      border-top: 90px solid transparent;
+      border-left: 70px solid #f7e8dd;
+      border-bottom: 30px solid transparent;
+      border-top-left-radius: 80%;
+      border-top-right-radius: 20%;
+      transform: scale(0.3) rotate(200deg);
+    }
