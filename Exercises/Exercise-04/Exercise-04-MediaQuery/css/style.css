@@ -1,0 +1,84 @@
+@import url();
+
+body {
+	background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+
+}
+
+/* Text
+-------------------------------------------------- */
+
+
+
+/* Image
+-------------------------------------------------- */
+
+
+
+/* iPad 
+-------------------------------------------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+  /* text */
+
+
+  /* image */
+
+}
+
+/* Mobile
+-------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+
+  /* text */
+
+  /* image */
+
+}
+
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#fff1f899;
+  padding:60px;
+  margin-top:10px;
+  display:block;
+  width:100%;
+  color:#490092;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#fff1f899;
+  float:left;
+  width:20%;
+  height: 590px;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+.bottom{
+	background-color:#e5e5e5;
+	text-align:center;
+	padding:10px;
+	margin-top:7px;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
