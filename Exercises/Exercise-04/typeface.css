@@ -809,11 +809,32 @@ position: absolute;
 }
 
 
+.left-r{
+	position: absolute;
+	top:590px;
+    left:380px;
+}
 
+.o-r{
+	position: absolute;
+	top:630px;
+    left:580px;
+    transform: scale(1);
+}
 
+.line-jiaxin-r{
+	position: absolute;
+	top:675px;
+    left:-340px;
+    transform: scale(1.2);
+}
 
-
-
-
-
+.square-r{
+      width: 15px;
+      height: 83px;
+      background: black;
+      position: absolute;
+      top:792px;
+      left: 740px; 
+}
 
