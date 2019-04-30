@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>view</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head_box">
+				<div class="left">
+					<img src="img/left_logo.png" />
+				</div>
+				<div class="right">
+					Yangtze River Dolphin
+				</div>
+				<div class="clear"></div>
+				<div class="center">
+					<img src="img/jiangtun.png" />
+				</div>
+			<div class="item_img item1" id="item1">
+				<div class="item_imgjian">
+					<div class="item_img_one">
+					</div>
+					<div class="item_imgtwo">
+						<div class="item_border">
+							<a href="xq1.html"><span>Go</span></a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="item_img item2" id="item2">
+				<div class="item_imgjian">
+					<div class="item_img_one">
+					</div>
+					<div class="item_imgtwo">
+						<div class="item_border">
+							<a href="xq2.html"><span>Go</span></a>
+						</div>	
+						
+					</div>
+				</div>
+			</div>
+			<div class="item_img item3" id="item3">
+				<div class="item_imgjian">
+					<div class="item_img_one">
+					</div>
+					<div class="item_imgtwo">
+						<div class="item_border">
+							<a href="xq3.html"><span>Go</span></a>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="item_img item4" id="item4">
+				<div class="item_imgjian">
+					<div class="item_img_one">
+					</div>
+					<div class="item_imgtwo">
+						<div class="item_border">
+							<a href="xq4.html"><span>Go</span></a>
+						</div>	
+					</div>
+				</div>
+			</div>	
+			<div class="item_title">
+				<p class="mask">Related website</p>
+				<div class="mask_show">
+					<div class="unit">
+						<a href="http://www.wwfchina.org/wikidetail.php?id=1"><span>WWF China</span>
+						<i></i>
+						</a>	
+					</div>
+					<div class="unit">
+						<a href="http://www.fpchina.net/">
+							<span>Yueyang</span>
+							<i></i>
+						</a>
+					</div>					
+					<div class="unit">
+						<a href="http://www.ibaiji.org/">
+							<span>Wuhan</span>
+							<i></i>
+						</a>
+					</div>					
+					<div class="unit">
+						<a href="http://www.hedadata.com/web/index/newsView?ids=LIn6SDy1HW3zxN">
+							<span>Heda Technology</span>
+							<i></i>
+						</a>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>	
+	</body>
+
+	<script type="text/javascript">
+		$(function(){
+			$(".item1").hover(function(){
+				$(".head").addClass("active1")
+				$(".item1").addClass("active1")
+				
+			},function(){
+				$(".head").removeClass("active1")
+				$(".item1").removeClass("active1")
+			})
+			$(".item2").hover(function(){
+				$(".head").addClass("active2")
+				$(".item2").addClass("active2")
+			},function(){
+				$(".head").removeClass("active2")
+				$(".item2").removeClass("active2")
+			})		
+			$(".item3").hover(function(){
+				$(".head").addClass("active3")
+				$(".item3").addClass("active3")
+			},function(){
+				$(".head").removeClass("active3")
+				$(".item3").removeClass("active3")
+			})	
+			$(".item4").hover(function(){
+				$(".head").addClass("active4")
+				$(".item4").addClass("active4")
+			},function(){
+				$(".head").removeClass("active4")
+				$(".item4").removeClass("active4")
+			})			
+		})
+//拖拽		
+　　var item1 = document.getElementById("item1");
+　　item1.onmousedown = function(ev){
+　　　　var oevent = ev || event;
+
+　　　　var distanceX = oevent.clientX - item1.offsetLeft;
+　　　　var distanceY = oevent.clientY - item1.offsetTop;
+
+　　　　document.onmousemove = function(ev){
+　　　　　　var oevent = ev || event;
+　　　　　　item1.style.left = oevent.clientX - distanceX + 'px';
+　　　　　　item1.style.top = oevent.clientY - distanceY + 'px'; 
+　　　　};
+　　　　document.onmouseup = function(){
+　　　　　　document.onmousemove = null;
+　　　　　　document.onmouseup = null;
+　　　　};
+　　;
+};
+　　var item2 = document.getElementById("item2");
+　　item2.onmousedown = function(ev){
+　　　　var oevent = ev || event;
+
+　　　　var distanceX = oevent.clientX - item2.offsetLeft;
+　　　　var distanceY = (oevent.clientY - item2.offsetTop);
+
+　　　　document.onmousemove = function(ev){
+　　　　　　var oevent = ev || event;
+　　　　　　item2.style.left = oevent.clientX - distanceX + 'px';
+　　　　　　item2.style.top = (oevent.clientY - distanceY)+ 'px'; 
+　　　　};
+　　　　document.onmouseup = function(){
+　　　　　　document.onmousemove = null;
+　　　　　　document.onmouseup = null;
+　　　　};
+　　;
+};
+　　var item3 = document.getElementById("item3");
+　　item3.onmousedown = function(ev){
+　　　　var oevent = ev || event;
+
+　　　　var distanceX = oevent.clientX - item3.offsetLeft;
+　　　　var distanceY = (oevent.clientY - item3.offsetTop);
+
+　　　　document.onmousemove = function(ev){
+　　　　　　var oevent = ev || event;
+　　　　　　item3.style.left = oevent.clientX - distanceX + 'px';
+　　　　　　item3.style.top = (oevent.clientY - distanceY)+ 'px'; 
+　　　　};
+　　　　document.onmouseup = function(){
+　　　　　　document.onmousemove = null;
+　　　　　　document.onmouseup = null;
+　　　　};
+　　;
+};
+　　var item4 = document.getElementById("item4");
+　　item4.onmousedown = function(ev){
+　　　　var oevent = ev || event;
+
+　　　　var distanceX = oevent.clientX - item4.offsetLeft;
+　　　　var distanceY = (oevent.clientY - item4.offsetTop);
+
+　　　　document.onmousemove = function(ev){
+　　　　　　var oevent = ev || event;
+　　　　　　item4.style.left = oevent.clientX - distanceX + 'px';
+　　　　　　item4.style.top = (oevent.clientY - distanceY)+ 'px'; 
+　　　　};
+　　　　document.onmouseup = function(){
+　　　　　　document.onmousemove = null;
+　　　　　　document.onmouseup = null;
+　　　　};
+　　;
+};
+	</script>
+
+	
+<style class="three_right">
+a:link { 
+color:white; 
+text-decoration:underline; 
+} 
+a:visited { 
+color:yellow; 
+text-decoration:none; 
+} 
+a:hover { 
+color:pink; 
+text-decoration:none; 
+} 
+a:active { 
+color:blue; 
+text-decoration:none; 
+} 
+</style>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Examples for Week 10</title>
+		<style type="text/css">
+			
+			.curve-top{
+				  width: 500px; 
+				  height: 100px;  
+				  border: solid 5px;
+				  border-color: #000 transparent transparent transparent;
+				  border-radius: 50% 50% 0 0;
+			}
+
+			.curve-right{
+				width: 100px;
+				height: 500px;
+				border: dotted 4px;
+				border-color: transparent #0000FF transparent transparent;
+				border-radius: 0 50% 50% 0;
+			}
+
+			.curve-bottom{
+				width: 500px;
+				height: 100px;
+				border: thick double #FF69B4;
+				border-color: transparent transparent #FF69B4 transparent;
+				border-radius: 0 0 50% 50%;
+			}
+
+			.curve-left{
+				width: 100px;
+				height: 500px;
+				border: ridge 4px;
+				border-color: transparent transparent transparent #FF0000;
+				border-radius:  50% 0 0 50%;
+			}
+
+			/* top right bottom left */
+
+			.curve-all{
+				width: 500px;
+				height: 500px;
+				border: solid 6px;
+				border-color: red transparent blue black;
+				border-radius: 50% 50% 50% 50%;
+			}
+
+			#container-2  div{
+				position: relative;
+				display: inline-block;
+			}
+			#container-3  div div{
+				position: relative;
+				display: inline-block;
+				float: left;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div id="container-1">
+			<div class="curve-top"></div>
+			<div class="curve-right"></div>
+			<div class="curve-bottom"></div>
+			<div class="curve-left"></div>
+			<div class="curve-all"></div>
+		</div>
+
+		<div id="container-2">
+			<div class="curve-right"></div>
+			<div class="curve-left"></div>
+			<div class="curve-right"></div>
+			<div class="curve-left"></div>
+			<div class="curve-right"></div>
+			<div class="curve-left"></div>
+			<div class="curve-right"></div>
+			<div class="curve-left"></div>
+		</div>
+
+		<div id="container-3">
+			<div>
+				<div class="curve-top"></div>
+				<div class="curve-top"></div>
+				<div class="curve-top"></div>
+				<div class="curve-top"></div>
+			</div>
+			<div>
+				<div class="curve-bottom"></div>
+				<div class="curve-bottom"></div>
+				<div class="curve-bottom"></div>
+				<div class="curve-bottom"></div>
+			</div>
+		</div>
+
+	</body>
+</html>
